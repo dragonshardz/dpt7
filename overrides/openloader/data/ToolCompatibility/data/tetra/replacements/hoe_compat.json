@@ -1,0 +1,17 @@
+[
+	{
+		"predicate": {
+			"item": "extendednether:netherite_hoe"
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"double/head_left": ["double/hoe_left", "hoe/netherite"],
+			"double/head_right": ["double/butt_right", "butt/netherite"],
+			"double/handle": ["double/basic_handle", "basic_handle/netherite"]
+		},
+		"improvements": {
+			"double/head_left:arrested": 0,
+			"double/head_right:arrested": 0
+		}
+	}
+]

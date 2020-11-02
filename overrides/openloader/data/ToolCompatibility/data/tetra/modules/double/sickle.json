@@ -1,0 +1,33 @@
+{
+	"variants": [
+		{
+			"key": "sickle/netherite",
+			"durability": 954,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 2,
+			"attackSpeed": -0.4,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 32,
+				"textureY": 32
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/double/head/sickle/netherite"
+				}
+			],
+			"capabilities": {
+				"cut": [
+					1,
+					7.5
+				]
+			},
+			"effects": {
+				"strikingCut": 1,
+				"sweepingStrike": 1,
+				"sweeping": 1
+			}
+		}
+	]
+}

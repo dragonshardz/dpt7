@@ -1,0 +1,51 @@
+{
+    "outcomes": [
+        {
+            "material": {
+                "item": "create:andesite_alloy",
+                "count": 2
+            },
+            "requiredCapabilities": {
+                "hammer": 2
+            },
+            "moduleKey": "duplex/adze",
+            "moduleVariant": "adze/andesite_alloy"
+        },
+        {
+            "material": {
+                "item": "create:shadow_steel",
+                "count": 2
+            },
+            "requiredCapabilities": {
+                "hammer": 3
+            },
+            "moduleKey": "duplex/adze",
+            "moduleVariant": "adze/shadow_steel"
+        },
+        {
+            "material": {
+                "item": "create:polished_rose_quartz",
+                "count": 2
+            },
+            "requiredCapabilities": {
+                "hammer": 2
+            },
+            "moduleKey": "duplex/adze",
+            "moduleVariant": "adze/rose_quartz",
+            "improvements": {
+                "arrested": 0
+            }
+        },
+        {
+            "material": {
+                "item": "create:refined_radiance",
+                "count": 4
+            },
+            "requiredCapabilities": {
+                "hammer": 3
+            },
+            "moduleKey": "duplex/adze",
+            "moduleVariant": "adze/radiant"
+        }
+    ]
+}

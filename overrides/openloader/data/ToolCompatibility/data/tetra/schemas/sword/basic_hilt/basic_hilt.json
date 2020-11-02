@@ -1,0 +1,25 @@
+{
+	"outcomes": [
+		{
+			"material": {
+				"item": "extendednether:netherite_scrap",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hammer": 4
+			},
+			"moduleKey": "sword/basic_hilt",
+			"moduleVariant": "basic_hilt/netherite"
+		},
+		{
+			"material": {
+				"item": "upgrade_aquatic:prismarine_rod"
+			},
+			"requiredCapabilities": {
+				"hammer": 1
+			},
+			"moduleKey": "sword/basic_hilt",
+			"moduleVariant": "basic_hilt/prismarine"
+		}
+	]
+}

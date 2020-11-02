@@ -1,0 +1,37 @@
+{
+	"variants": [
+		{
+			"key": "basic_hilt/netherite",
+			"durability": 81,
+			"integrity": 6,
+			"magicCapacity": 90,
+			"attackSpeed": 0.45,
+			"glyph": {
+				"tint": "603432",
+				"textureX": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/hilt/basic/netherite"
+				}
+			]
+		},
+		{
+			"key": "basic_hilt/prismarine",
+			"durability": 250,
+			"integrity": 5,
+			"magicCapacity": 102,
+			"attackSpeed": 0.25,
+			"glyph": {
+				"tint": "prismarine_glyph",
+				"textureX": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/hilt/basic/default",
+					"tint": "prismarine_dark"
+				}
+			]
+		}
+	]
+}

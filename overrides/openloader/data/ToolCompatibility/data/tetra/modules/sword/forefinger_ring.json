@@ -1,0 +1,22 @@
+{
+	"variants": [
+		{
+			"key": "forefinger_ring/netherite",
+			"durability": 90,
+			"integrity": -1,
+			"effects": {
+				"quickStrike": 4
+			},
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 48,
+				"textureY": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/guard/forefinger_ring/netherite"
+				}
+			]
+		}
+	]
+}

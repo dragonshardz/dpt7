@@ -1,0 +1,30 @@
+{
+	"variants": [
+		{
+			"key": "basic_axe/netherite",
+			"durability": 1272,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 9,
+			"attackSpeed": -0.7,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 144
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/double/head/basic_axe/netherite"
+				}
+			],
+			"capabilities": {
+				"axe": [
+					5,
+					9
+				]
+			},
+			"effects": {
+				"stripping": 1
+			}
+		}
+	]
+}

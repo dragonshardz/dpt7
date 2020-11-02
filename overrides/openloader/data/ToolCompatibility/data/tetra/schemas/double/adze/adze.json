@@ -1,0 +1,18 @@
+{
+	"outcomes": [
+		{
+			"material": {
+				"item": "extendednether:netherite_ingot",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hammer": 5
+			},
+			"moduleKey": "double/adze",
+			"moduleVariant": "adze/netherite",
+			"improvements": {
+				"arrested": 0
+			}
+		}
+	]
+}

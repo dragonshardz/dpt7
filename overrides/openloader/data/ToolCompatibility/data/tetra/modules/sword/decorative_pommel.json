@@ -1,0 +1,19 @@
+{
+	"variants": [
+		{
+			"key": "decorative_pommel/netherite",
+			"durability": 40,
+			"attackSpeed": -0.5,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 14,
+				"textureY": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/pommel/decorative_pommel/netherite"
+				}
+			]
+		}
+	]
+}

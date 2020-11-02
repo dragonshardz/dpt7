@@ -1,0 +1,33 @@
+{
+	"variants": [
+		{
+			"key": "machete/netherite",
+			"durability": 1830,
+			"integrity": -3,
+			"magicCapacity": 90,
+			"damage": 7,
+			"attackSpeed": 0,
+			"effects": {
+				"sweeping": 1,
+				"strikingCut": 1,
+				"sweepingStrike": 1
+			},
+			"capabilities": {
+				"cut": [
+					1,
+					0.9375
+				]
+			},
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 48,
+				"textureY": 32
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/blade/machete/netherite"
+				}
+			]
+		}
+	]
+}

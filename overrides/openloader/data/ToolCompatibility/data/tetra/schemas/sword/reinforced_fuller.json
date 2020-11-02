@@ -1,0 +1,15 @@
+{
+	"outcomes": [
+		{
+			"material": {
+				"item": "extendednether:netherite_ingot",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hammer": 4
+			},
+			"moduleKey": "sword/reinforced_fuller",
+			"moduleVariant": "reinforced_fuller/netherite"
+		}
+	]
+}

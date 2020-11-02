@@ -1,0 +1,30 @@
+{
+	"variants": [
+		{
+			"key": "heavy_blade/netherite",
+			"durability": 2423,
+			"integrity": -4,
+			"magicCapacity": 90,
+			"damage": 9,
+			"attackSpeed": -0.6,
+			"effects": {
+				"sweeping": 3
+			},
+			"capabilities": {
+				"cut": [
+					1,
+					1
+				]
+			},
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 48
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/blade/heavy/netherite"
+				}
+			]
+		}
+	]
+}

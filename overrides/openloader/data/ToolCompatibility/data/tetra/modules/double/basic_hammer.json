@@ -1,0 +1,27 @@
+{
+	"variants": [
+		{
+			"key": "basic_hammer/netherite",
+			"durability": 720,
+			"integrity": -3,
+			"magicCapacity": 90,
+			"damage": 9,
+			"attackSpeed": -0.45,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 64
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/double/head/basic_hammer/netherite"
+				}
+			],
+			"capabilities": {
+				"hammer": [
+					4,
+					15
+				]
+			}
+		}
+	]
+}

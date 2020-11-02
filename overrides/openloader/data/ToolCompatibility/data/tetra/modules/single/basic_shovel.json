@@ -1,0 +1,31 @@
+{
+	"variants": [
+		{
+			"key": "basic_shovel/netherite",
+			"durability": 991,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 1,
+			"attackSpeed": -0.3,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 176,
+				"textureY": 32
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/single/head/basic_shovel/netherite"
+				}
+			],
+			"effects": {
+				"flattening": 1
+			},
+			"capabilities": {
+				"shovel": [
+					5,
+					9
+				]
+			}
+		}
+	]
+}

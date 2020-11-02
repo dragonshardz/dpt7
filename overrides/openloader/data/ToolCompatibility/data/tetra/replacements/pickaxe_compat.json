@@ -1,0 +1,17 @@
+[
+	{
+		"predicate": {
+			"item": "extendednether:netherite_pickaxe"
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"double/head_left": ["double/basic_pickaxe_left", "basic_pickaxe/netherite"],
+			"double/head_right": ["double/basic_pickaxe_right", "basic_pickaxe/netherite"],
+			"double/handle": ["double/basic_handle", "basic_handle/netherite"]
+		},
+		"improvements": {
+			"double/head_left:arrested": 0,
+			"double/head_right:arrested": 0
+		}
+	}
+]

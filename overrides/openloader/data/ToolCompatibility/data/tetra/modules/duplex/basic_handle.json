@@ -1,0 +1,19 @@
+{
+    "variants": [
+        {
+            "key": "basic_handle/quality_rod",
+            "durability": 104,
+            "integrity": 6,
+            "magicCapacity": 13,
+            "attackSpeed": -0.4,
+            "glyph": {
+                "tint": "bac4c8",
+                "textureX": 16
+            },
+            "models": [{
+                "location": "tetra:items/module/duplex/handle/basic/default",
+                "tint": "bac4c8"
+            }]
+        }
+    ]
+}

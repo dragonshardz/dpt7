@@ -1,0 +1,29 @@
+{
+	"outcomes": [
+		{
+			"material": {
+				"item": "extendednether:netherite_ingot",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hammer": 5
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/netherite",
+			"improvements": {
+				"arrested": 0
+			}
+		},
+		{
+			"material": {
+				"item": "upgrade_aquatic:thrasher_tooth",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hamemer": 1
+			},
+			"moduleKey": "single/spearhead",
+			"moduleVariant": "spearhead/thrasher"
+		}
+	]
+}

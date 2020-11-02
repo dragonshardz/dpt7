@@ -1,0 +1,15 @@
+{
+    "outcomes": [
+        {
+            "material": {
+                "item": "create:brass_sheet",
+                "count": 2
+            },
+            "requiredCapabilities": {
+                "hammer": 2
+            },
+            "moduleKey": "duplex/binding",
+            "moduleVariant": "duplex_binding/brass"
+        }
+    ]
+}

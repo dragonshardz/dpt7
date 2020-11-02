@@ -1,0 +1,19 @@
+{
+	"variants": [
+		{
+			"key": "makeshift_guard/netherite",
+			"durability": 80,
+			"attackSpeed": -0.15,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 7,
+				"textureY": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/guard/makeshift_guard/netherite"
+				}
+			]
+		}
+	]
+}

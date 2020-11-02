@@ -1,0 +1,12 @@
+{
+    "outcomes": [
+        {
+            "material": {
+                "item": "create:chromatic_compound"
+            },
+            "experienceCost": 5,
+            "moduleKey": "duplex/socket",
+            "moduleVariant": "duplex_socket/chromatic_compound"
+        }
+    ]
+}

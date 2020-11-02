@@ -1,0 +1,18 @@
+{
+	"outcomes": [
+		{
+			"material": {
+				"item": "extendednether:netherite_ingot",
+				"count": 1
+			},
+			"requiredCapabilities": {
+				"hammer": 5
+			},
+			"moduleKey": "sword/basic_blade",
+			"moduleVariant": "basic_blade/netherite",
+			"improvements": {
+				"arrested": 0
+			}
+		}
+	]
+}

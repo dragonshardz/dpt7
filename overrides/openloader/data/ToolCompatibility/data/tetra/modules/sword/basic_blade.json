@@ -1,0 +1,29 @@
+{
+	"variants": [
+		{
+			"key": "basic_blade/netherite",
+			"durability": 1830,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 7,
+			"attackSpeed": 0.2,
+			"effects": {
+				"sweeping": 1
+			},
+			"capabilities": {
+				"cut": [
+					1,
+					0.9375
+				]
+			},
+			"glyph": {
+				"tint": "51444E"
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/sword/blade/basic/netherite"
+				}
+			]
+		}
+	]
+}

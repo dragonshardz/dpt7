@@ -1,0 +1,31 @@
+{
+	"variants": [
+		{
+			"key": "claw/netherite",
+			"durability": 835,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 1,
+			"attackSpeed": -0.4,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 64,
+				"textureY": 32
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/double/head/claw/netherite"
+				}
+			],
+			"capabilities": {
+				"pry": [
+					1,
+					4.7
+				]
+			},
+			"effects": {
+				"denailing": 1
+			}
+		}
+	]
+}

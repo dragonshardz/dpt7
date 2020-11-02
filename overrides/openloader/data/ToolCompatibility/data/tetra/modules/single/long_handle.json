@@ -1,0 +1,36 @@
+{
+	"variants": [
+		{
+			"key": "long_handle/netherite",
+			"durability": 124,
+			"integrity": 6,
+			"magicCapacity": 90,
+			"range": 2.5,
+			"glyph": {
+				"tint": "603432",
+				"textureX": 16
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/single/handle/long/netherite"
+				}
+			]
+		},
+		{
+			"key": "long_handle/prismarine_rod",
+			"durability": 160,
+			"integrity": 3,
+			"magicCapacity": 102,
+			"attackSpeed": -0.2,
+			"range": 2.5,
+			"glyph": {
+				"tint": "prismarine_glyph",
+				"textureX": 16
+			},
+			"models": [{
+				"location": "tetra:items/module/double/handle/basic/default",
+				"tint": "prismarine_dark"
+			}]
+		}
+	]
+}

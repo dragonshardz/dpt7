@@ -1,0 +1,39 @@
+{
+	"variants": [
+		{
+			"key": "spearhead/netherite",
+			"durability": 1907,
+			"integrity": -2,
+			"magicCapacity": 90,
+			"damage": 7,
+			"attackSpeed": 0.2,
+			"glyph": {
+				"tint": "51444E",
+				"textureX": 208,
+				"textureY": 32
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/single/head/spearhead/netherite"
+				}
+			]
+		},
+		{
+			"key": "spearhead/thrasher",
+			"durability": 64,
+			"integrity": -1,
+			"magicCapacity": 90,
+			"damage": 6,
+			"attackSpeed": 0.2,
+			"glyph": {
+				"textureX": 208,
+				"textureY": 32,
+				"tint": "fcfcfc"
+			},
+			"models": [{
+				"location": "tetra:items/module/single/head/spearhead/thrasher",
+				"tint": "fcfcfc"
+			}]
+		}
+	]
+}
