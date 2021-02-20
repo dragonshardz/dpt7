@@ -262,11 +262,11 @@ craftingTable.addShapeless("createdoughfrompam", createdough, [pamdough], null);
 {
     ingredients: [
         water,
-		water,
+		water
     ],
     result: {
         item: pamsalt.registryName,
-		count: 2
+		count: 4
     },
     cookingtime: 200,
 	
