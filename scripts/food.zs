@@ -1,3 +1,5 @@
+import crafttweaker.api.item.IItemStack;
+
 //global vars
 var milk = <tag:items:forge:milk>;
 var water = <tag:items:forge:water>;
@@ -5,7 +7,17 @@ var flour = <tag:items:forge:flour>;
 var rawmeats = <tag:items:forge:rawmeats>;
 var veggies = <tag:items:forge:vegetables>;
 var bowl = <item:minecraft:bowl>;
+var bottle = <item:minecraft:glass_bottle>;
 var jellies = <tag:items:forge:jellies>;
+var noodlz = <tag:items:forge:pasta>;
+var rawchook = <tag:items:forge:raw_chicken>;
+var rawfeesh = <tag:items:forge:rawfish>;
+var vingarmats = <tag:items:forge:vinegar_ingredients>;
+var stockmats = <tag:items:forge:stock_ingredients>;
+
+//misc vars
+var mulberry = <item:upgrade_aquatic:mulberry>;
+var mulberryjam = <item:upgrade_aquatic:mulberry_jam_bottle>;
 
 //tea vars
 var cbeans = <item:minecraft:cocoa_beans>;
@@ -40,7 +52,57 @@ for str in removeFoodArray{
 
 //tag additions
 flour.add(<item:create:wheat_flour>);
-jellies.add(<item:upgrade_aquatic:mulberry_jam_bottle>);
+jellies.add(mulberryjam);
+vingarmats.add(mulberry,<item:atmospheric:passionfruit>);
+
+val rawMeatsArray = [
+	<item:autumnity:turkey>,
+	<item:autumnity:turkey_piece>
+] as IItemStack[];
+
+for item in rawMeatsArray{
+	rawmeats.add(item);
+	stockmats.add(item);
+}
+
+val rawFishesArray = [
+	<item:aquaculture:atlantic_cod>,
+	<item:aquaculture:blackfish>,
+	<item:aquaculture:pacific_halibut>,
+	<item:aquaculture:atlantic_halibut>,
+	<item:aquaculture:atlantic_herring>,
+	<item:aquaculture:pink_salmon>,
+	<item:aquaculture:pollock>,
+	<item:aquaculture:rainbow_trout>,
+	<item:aquaculture:bayad>,
+	<item:aquaculture:boulti>,
+	<item:aquaculture:capitaine>,
+	<item:aquaculture:synodontis>,
+	<item:aquaculture:smallmouth_bass>,
+	<item:aquaculture:bluegill>,
+	<item:aquaculture:brown_trout>,
+	<item:aquaculture:carp>,
+	<item:aquaculture:catfish>,
+	<item:aquaculture:gar>,
+	<item:aquaculture:minnow>,
+	<item:aquaculture:muskellunge>,
+	<item:aquaculture:perch>,
+	<item:aquaculture:arapaima>,
+	<item:aquaculture:piranha>,
+	<item:aquaculture:tambaqui>,
+	<item:aquaculture:brown_shrooma>,
+	<item:aquaculture:red_shrooma>,
+	<item:aquaculture:red_grouper>,
+	<item:aquaculture:tuna>,
+	<item:aquaculture:goldfish>,
+	<item:upgrade_aquatic:pike>,
+	<item:upgrade_aquatic:lionfish>
+] as IItemStack[];
+
+for item in rawFishesArray{
+	rawfeesh.add(item);
+	stockmats.add(item);
+}
 
 //new recipes
 craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sugar], null);
@@ -145,33 +207,55 @@ craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [
     },
 });
 
-//pam vars
-var pamdough = <item:pamhc2foodcore:doughitem>;
-var createdough = <item:create:dough>;
+//pam outputs
 var pamsalt = <item:pamhc2foodcore:saltitem>;
 var pamstew = <item:pamhc2foodcore:stewitem>;
-var punkinslice = <item:farmersdelight:pumpkin_slice>;
 var pumpkinbroth = <item:pamhc2foodcore:pumpkinsoupitem>;
-var stock = <item:pamhc2foodcore:stockitem>;
-var potato = <item:minecraft:potato>;
-var cookoil = <item:pamhc2foodcore:cookingoilitem>;
 var fries = <item:pamhc2foodcore:friesitem>;
 var tatersoup = <item:pamhc2foodcore:potatosoupitem>;
-var groundchook = <item:pamhc2foodcore:groundchickenitem>;
 var nugcikan = <item:pamhc2foodcore:chickennuggetitem>;
-var batter = <item:pamhc2foodcore:batteritem>;
 var donut = <item:pamhc2foodcore:donutitem>;
 var cdonut = <item:pamhc2foodcore:chocolatedonutitem>;
 var jdonut = <item:pamhc2foodcore:jellydonutitem>;
-var vinegar = <item:pamhc2foodcore:vinegaritem>;
 var pickledbeet = <item:pamhc2foodcore:pickledbeetsitem>;
+var carrotsoup = <item:pamhc2foodcore:carrotsoupitem>;
+var noodlsoup = <item:pamhc2foodcore:noodlesoupitem>;
+var macncheez = <item:pamhc2foodcore:macncheeseitem>;
+var friedcikan = <item:pamhc2foodcore:friedchickenitem>;
+var butter = <item:pamhc2foodcore:butteritem>;
+var potroast = <item:pamhc2foodcore:potroastitem>;
+var fishnchips = <item:pamhc2foodcore:fishandchipsitem>;
+var cheez = <item:pamhc2foodcore:cheeseitem>;
+var vinegar = <item:pamhc2foodcore:vinegaritem>;
+var boiledegg = <item:pamhc2foodcore:boiledeggitem>;
+var mashtaters = <item:pamhc2foodcore:mashedpotatoesitem>;
+var applejelly = <item:pamhc2foodcore:applejellyitem>;
+var melonjelly = <item:pamhc2foodcore:melonjellyitem>;
+var berryjelly = <item:pamhc2foodcore:sweetberryjellyitem>;
+var stock = <item:pamhc2foodcore:stockitem>;
+var cottoncandy = <item:pamhc2foodcore:cottoncandyitem>;
+
+//pam inputs
+var pamdough = <item:pamhc2foodcore:doughitem>;
+var createdough = <item:create:dough>;
+var punkinslice = <item:farmersdelight:pumpkin_slice>;
+var potato = <item:minecraft:potato>;
+var cookoil = <item:pamhc2foodcore:cookingoilitem>;
+var groundchook = <item:pamhc2foodcore:groundchickenitem>;
+var batter = <item:pamhc2foodcore:batteritem>;
 var beet = <item:minecraft:beetroot>;
 var carrot = <item:minecraft:carrot>;
-var carrotsoup = <item:pamhc2foodcore:carrotsoupitem>;
+var rawbeef = <item:minecraft:beef>;
+var egg = <item:minecraft:egg>;
+var baketate = <item:minecraft:baked_potato>;
+var applejuice = <item:pamhc2foodcore:applejuiceitem>;
+var melonjuice = <item:pamhc2foodcore:melonjuiceitem>;
+var berryjuice = <item:pamhc2foodcore:sweetberryjuiceitem>;
+
 
 //conversions
-craftingTable.addShapeless("PamDoughFromCreate", pamdough, [createdough], null);
-craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
+craftingTable.addShapeless("pamdoughfromcreate", pamdough, [createdough], null);
+craftingTable.addShapeless("createdoughfrompam", createdough, [pamdough], null);
 
 //pam's pot stuff
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsalt",
@@ -214,6 +298,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: pumpkinbroth.registryName,
+		count: 2
     },
     cookingtime: 200,
     container: {
@@ -230,6 +315,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: fries.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -242,6 +328,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: tatersoup.registryName,
+		count: 2
     },
     cookingtime: 200,
 	    container: {
@@ -257,6 +344,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: nugcikan.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -269,6 +357,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: donut.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -282,6 +371,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: cdonut.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -295,6 +385,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: jdonut.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -307,6 +398,7 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: pickledbeet.registryName,
+		count: 2
     },
     cookingtime: 200,
 });
@@ -319,9 +411,262 @@ craftingTable.addShapeless("CreateDoughFromPam", createdough, [pamdough], null);
     ],
     result: {
         item: carrotsoup.registryName,
+		count: 2
     },
     cookingtime: 200,
     container: {
         item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotnoodlesoup",
+{
+    ingredients: [
+        noodlz,
+        stock
+    ],
+    result: {
+        item: carrotsoup.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+    container: {
+        item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotmacncheez",
+{
+    ingredients: [
+        noodlz,
+        cheez
+    ],
+    result: {
+        item: macncheez.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+    container: {
+        item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotfriedcikan",
+{
+    ingredients: [
+        flour,
+        rawchook,
+		cookoil
+    ],
+    result: {
+        item: friedcikan.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotbutter",
+{
+    ingredients: [
+        milk
+    ],
+    result: {
+        item: butter.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotroast",
+{
+    ingredients: [
+        rawbeef,
+        potato,
+		carrot
+    ],
+    result: {
+        item: potroast.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+    container: {
+        item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotfishnchips",
+{
+    ingredients: [
+        rawfeesh,
+        flour,
+		fries
+    ],
+    result: {
+        item: fishnchips.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+    container: {
+        item: <item:ceramics:clay_plate>.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotbutter",
+{
+    ingredients: [
+        milk,
+        pamsalt
+    ],
+    result: {
+        item: butter.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotvinegar",
+{
+    ingredients: [
+        vingarmats
+    ],
+    result: {
+        item: vinegar.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotcheese",
+{
+    ingredients: [
+        milk,
+		pamsalt
+    ],
+    result: {
+        item: cheez.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotstock",
+{
+    ingredients: [
+        stockmats
+    ],
+    result: {
+        item: stock.registryName,
+		count: 4
+    },
+    cookingtime: 200,
+    container: {
+        item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotboiledegg",
+{
+    ingredients: [
+        egg
+    ],
+    result: {
+        item: boiledegg.registryName,
+		count: 1
+    },
+    cookingtime: 200,
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsmeeshtates",
+{
+    ingredients: [
+        baketate,
+		butter,
+		pamsalt
+    ],
+    result: {
+        item: mashtaters.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+	    container: {
+        item: bowl.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotapplejelly",
+{
+    ingredients: [
+        applejuice,
+		sugar
+    ],
+    result: {
+        item: applejelly.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+	    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotmelonjelly",
+{
+    ingredients: [
+        melonjuice,
+		sugar
+    ],
+    result: {
+        item: melonjelly.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+	    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotberryjelly",
+{
+    ingredients: [
+        berryjuice,
+		sugar
+    ],
+    result: {
+        item: berryjelly.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+	    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotmulberryjam",
+{
+    ingredients: [
+        mulberry,
+		sugar
+    ],
+    result: {
+        item: mulberryjam.registryName,
+		count: 2
+    },
+    cookingtime: 200,
+	    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotcottoncandy",
+{
+    ingredients: [
+		sugar
+    ],
+    result: {
+        item: cottoncandy.registryName,
+		count: 2
     },
 });
