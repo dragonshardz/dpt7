@@ -14,6 +14,7 @@ var rawchook = <tag:items:forge:raw_chicken>;
 var rawfeesh = <tag:items:forge:rawfish>;
 var vingarmats = <tag:items:forge:vinegar_ingredients>;
 var stockmats = <tag:items:forge:stock_ingredients>;
+var basestone = <tag:items:forge:stone>;
 
 //misc vars
 var mulberry = <item:upgrade_aquatic:mulberry>;
@@ -104,9 +105,47 @@ for item in rawFishesArray{
 	stockmats.add(item);
 }
 
+val worldStoneArray = [
+	<item:minecraft:stone>,
+	<item:minecraft:granite>,
+	<item:minecraft:diorite>,
+	<item:minecraft:andesite>,
+	<item:minecraft:mossy_cobblestone>,
+	<item:create:limestone>,
+	<item:create:granite_cobblestone>,
+	<item:create:diorite_cobblestone>,
+	<item:create:andesite_cobblestone>,
+	<item:create:limestone_cobblestone>,
+	<item:create:diorite_cobblestone>,
+	<item:create:weathered_limestone>,
+	<item:create:weathered_limestone_cobblestone>,
+	<item:create:dolomite>,
+	<item:create:dolomite_cobblestone>,
+	<item:create:gabbro>,
+	<item:create:gabbro_cobblestone>,
+	<item:create:scoria>,
+	<item:create:scoria_cobblestone>,
+	<item:create:dark_scoria>,
+	<item:create:dark_scoria_cobblestone>,
+	<item:quark:permafrost>,
+	<item:quark:cobbedstone>,
+	<item:quark:marble>,
+	<item:quark:limestone>,
+	<item:quark:jasper>,
+	<item:quark:slate>,
+	<item:quark:basalt>,
+	<item:quark:myalite>,
+	
+] as IItemStack[];
+
+for item in worldStoneArray{
+	basestone.add(item);
+}
+
 //new recipes
 craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sugar], null);
 craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [stcocoa,<item:pamhc2foodcore:marshmellowsitem>], null);
+craftingTable.addShapeless("cobbledcobble", <item:minecraft:cobblestone> * 8, [basestone, basestone, basestone, basestone, basestone, basestone, basestone, basestone, basestone], null);
 
 //new create recipes
 <recipetype:create:filling>.addRecipe("fill_milk_bottle", <item:farmersdelight:milk_bottle>, <item:minecraft:glass_bottle>, <fluid:create:milk> * 333);
