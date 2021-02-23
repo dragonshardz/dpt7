@@ -108,9 +108,6 @@ for item in rawFishesArray{
 craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sugar], null);
 craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [stcocoa,<item:pamhc2foodcore:marshmellowsitem>], null);
 
-//new create recipes
-<recipetype:create:filling>.addRecipe("fill_milk_bottle", <item:farmersdelight:milk_bottle>, <item:minecraft:glass_bottle>, <fluid:create:milk> * 333);
-
 //farmer's delight and simply tea
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotcocoa",
 {
