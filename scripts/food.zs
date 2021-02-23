@@ -14,6 +14,14 @@ var rawchook = <tag:items:forge:raw_chicken>;
 var rawfeesh = <tag:items:forge:rawfish>;
 var vingarmats = <tag:items:forge:vinegar_ingredients>;
 var stockmats = <tag:items:forge:stock_ingredients>;
+var honeybottle = <item:minecraft:honey_bottle>;
+var honeyblock = <item:minecraft:honey_block>;
+var yucca = <item:atmospheric:yucca_fruit>;
+var yuccajuice = <item:atmospheric:yucca_juice>;
+var aloe = <item:atmospheric:aloe_leaves>;
+var aloegel = <item:atmospheric:aloe_gel_bottle>;
+var syrup = <item:autumnity:syrup_bottle>;
+var sap = <item:autumnity:sap_bottle>;
 
 //misc vars
 var mulberry = <item:upgrade_aquatic:mulberry>;
@@ -104,11 +112,103 @@ for item in rawFishesArray{
 	stockmats.add(item);
 }
 
+val honeyArray = [
+	<item:buzzier_bees:sticky_honey_wand>,
+	<item:create:honey_bucket>
+] as IItemStack[];
+
+for item in honeyArray{
+    <tag:items:crafttweaker:edible_honey>.add(item);
+}
+
 //new recipes
 craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sugar], null);
 craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [stcocoa,<item:pamhc2foodcore:marshmellowsitem>], null);
 
 //farmer's delight and simply tea
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsyrup",
+{
+    ingredients: [
+        sap
+    ],
+    result: {
+        item: syrup.registryName,
+        count: 1
+    },
+    cookingtime: 100,
+    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotaloegel",
+{
+    ingredients: [
+        aloe,
+	aloe,
+	aloe,
+	aloe,
+	aloe,
+	aloe,
+    ],
+    result: {
+        item: aloegel.registryName,
+        count: 1
+    },
+    cookingtime: 100,
+    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotyuccajuice",
+{
+    ingredients: [
+        yucca,
+	yucca,
+	yucca,
+	sugar
+    ],
+    result: {
+        item: yuccajuice.registryName,
+        count: 1
+    },
+    cookingtime: 100,
+    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpothoneybottles",
+{
+    ingredients: [
+        honeyblock,
+    ],
+    result: {
+        item: honeybottle.registryName,
+        count: 4
+    },
+    cookingtime: 100,
+    container: {
+        item: bottle.registryName
+    },
+});
+
+<recipetype:farmersdelight:cooking>.addJSONRecipe("fdpothoneybottle",
+{
+    ingredients: [
+        <tag:items:crafttweaker:edible_honey>,
+    ],
+    result: {
+        item: honeybottle.registryName,
+        count: 1
+    },
+    cookingtime: 50,
+    container: {
+        item: bottle.registryName
+    },
+});
+
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotcocoa",
 {
     ingredients: [
