@@ -25,3 +25,4 @@ craftingTable.addShaped("newiebelts", iebelt * 4, [[shaft,lbelt,shaft]]);
 <recipetype:create:mechanical_crafting>.addRecipe("cookiecraft", <item:minecraft:cookie>, [[dough, cbeans]]);
 <recipetype:create:mechanical_crafting>.addRecipe("createfdpiecrust", <item:farmersdelight:pie_crust>, [[dough, milk, dough]]);
 <recipetype:create:mixing>.addRecipe("mix_pie_crust", "none", <item:farmersdelight:pie_crust>, [dough, milk, dough]);
+<recipetype:create:mechanical_crafting>.addRecipe("createfdapplepie", <item:farmersdelight:apple_pie>, [[<item:minecraft:air>, dough, <item:minecraft:air>], [<item:minecraft:apple>, <item:minecraft:apple>, <item:minecraft:apple>], [<tag:items:forge:sugar>, <item:farmersdelight:pie_crust>, <tag:items:forge:sugar>]]);
