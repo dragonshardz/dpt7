@@ -10,6 +10,24 @@ var dough = <tag:items:forge:dough>;
 var cbeans = <item:minecraft:cocoa_beans>;
 var milk = <tag:items:forge:milk>;
 
+//recipe removal
+val removeMachineArray = [
+  "immersiveengineering:crafting/conveyor_redstone",
+	"immersiveengineering:crafting/conveyor_dropper",
+	"immersiveengineering:crafting/conveyor_vertical",
+	"immersiveengineering:crafting/conveyor_splitter",
+	"immersiveengineering:crafting/conveyor_extract",
+	"immersiveengineering:crafting/conveyor_covered",
+	"immersiveengineering:crafting/conveyor_droppercovered",
+	"immersiveengineering:crafting/conveyor_verticalcovered",
+	"immersiveengineering:crafting/conveyor_extractcovered",
+	"immersiveengineering:crafting/conveyor_splittercovered"
+  ] as string[];
+
+for str in removeMachineArray{
+    craftingTable.removeByName(str);
+}
+
 //tag additions
 createStand.add(fdmilk);
 
