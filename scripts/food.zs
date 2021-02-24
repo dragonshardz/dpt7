@@ -22,6 +22,9 @@ var aloe = <item:atmospheric:aloe_leaves>;
 var aloegel = <item:atmospheric:aloe_gel_bottle>;
 var syrup = <item:autumnity:syrup_bottle>;
 var sap = <item:autumnity:sap_bottle>;
+var dough = <tag:items:forge:dough>;
+var rawpasta = <item:farmersdelight:raw_pasta>;
+var egg = <tag:items:forge:eggs>;
 
 //misc vars
 var mulberry = <item:upgrade_aquatic:mulberry>;
@@ -51,7 +54,9 @@ var stcocoa = <item:simplytea:cup_cocoa>;
 //recipe removal
 val removeFoodArray = [
 	"pamhc2foodcore:hotchocolateitem",
-	"simplytea:cup_cocoa"
+	"simplytea:cup_cocoa",
+	"atmospheric:yucca_gateau",
+	"farmersdelight:raw_pasta"
 ] as string[];
 
 for str in removeFoodArray{
@@ -62,6 +67,7 @@ for str in removeFoodArray{
 flour.add(<item:create:wheat_flour>);
 jellies.add(mulberryjam);
 vingarmats.add(mulberry,<item:atmospheric:passionfruit>);
+dough.add(<item:create:dough>);
 
 val rawMeatsArray = [
 	<item:autumnity:turkey>,
@@ -124,6 +130,8 @@ for item in honeyArray{
 //new recipes
 craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sugar], null);
 craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [stcocoa,<item:pamhc2foodcore:marshmellowsitem>], null);
+craftingTable.addShapeless("yuccagateau", <item:atmospheric:yucca_gateau>, [<item:atmospheric:roasted_yucca_fruit>,aloegel,dough,<item:atmospheric:yucca_flower>], null);
+craftingTable.addShapeless("fdrawpasta", rawpasta, [egg,flour], null);
 
 //farmer's delight and simply tea
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsyrup",
@@ -346,7 +354,6 @@ var batter = <item:pamhc2foodcore:batteritem>;
 var beet = <item:minecraft:beetroot>;
 var carrot = <item:minecraft:carrot>;
 var rawbeef = <item:minecraft:beef>;
-var egg = <item:minecraft:egg>;
 var baketate = <item:minecraft:baked_potato>;
 var applejuice = <item:pamhc2foodcore:applejuiceitem>;
 var melonjuice = <item:pamhc2foodcore:melonjuiceitem>;
