@@ -25,6 +25,7 @@ var sap = <item:autumnity:sap_bottle>;
 var dough = <tag:items:forge:dough>;
 var rawpasta = <item:farmersdelight:raw_pasta>;
 var egg = <tag:items:forge:eggs>;
+var flourplants = <tag:items:forge:flour_plants>;
 
 //misc vars
 var mulberry = <item:upgrade_aquatic:mulberry>;
@@ -76,6 +77,7 @@ for str in removeFoodArray{
 
 //tag additions
 flour.add(<item:create:wheat_flour>);
+flourplants.add(<item:biomesoplenty:barley>);
 jellies.add(mulberryjam);
 vingarmats.add(mulberry,<item:atmospheric:passionfruit>);
 dough.add(<item:create:dough>);
