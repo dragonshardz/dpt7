@@ -66,7 +66,8 @@ val removeFoodArray = [
 	"farmersdelight:sweet_berry_cookie",
 	"farmersdelight:honey_cookie",
 	"farmersdelight:pie_crust",
-	"farmersdelight:integration/create/mixing/pie_crust_from_mixing"
+	"farmersdelight:integration/create/mixing/pie_crust_from_mixing",
+	"farmersdelight:apple_pie"
 ] as string[];
 
 for str in removeFoodArray{
@@ -148,6 +149,8 @@ craftingTable.addShapeless("doughcookie", <item:minecraft:cookie>, [dough,cbeans
 craftingTable.addShapeless("sweetcookie", <item:farmersdelight:sweet_berry_cookie>, [dough, <item:minecraft:sweet_berries>], null);
 craftingTable.addShapeless("honeycookie", <item:farmersdelight:honey_cookie>, [dough,honeybottle], null);
 craftingTable.addShapeless("fdpiecrust", <item:farmersdelight:pie_crust>, [dough, milk, dough], null);
+craftingTable.addShaped("fdapplepie", <item:farmersdelight:apple_pie>, [[<item:minecraft:air>, dough, <item:minecraft:air>], [<item:minecraft:apple>, <item:minecraft:apple>, <item:minecraft:apple>], [<tag:items:forge:sugar>, <item:farmersdelight:pie_crust>, <tag:items:forge:sugar>]], null);
+
 
 //farmer's delight and simply tea
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsyrup",
