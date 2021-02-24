@@ -56,12 +56,25 @@ val removeFoodArray = [
 	"pamhc2foodcore:hotchocolateitem",
 	"simplytea:cup_cocoa",
 	"atmospheric:yucca_gateau",
-	"farmersdelight:raw_pasta"
+	"farmersdelight:raw_pasta",
+	"autumnity:pancake"
+	"farmersdelight:cake_from_milk_bottle",
+	"minecraft:cake",
+	"ceramics:cake"
+	"minecraft:cookie",
+	"quark:tweaks/crafting/utility/bent/cookie",
+	"farmersdelight:sweet_berry_cookie",
+	"farmersdelight:honey_cookie",
+	"farmersdelight:pie_crust",
+	"farmersdelight:integration/create/mixing/pie_crust_from_mixing"
 ] as string[];
 
 for str in removeFoodArray{
     craftingTable.removeByName(str);
 }
+
+//remove create recipes
+<recipetype:create:mixing>.removeRecipe(<item:farmersdelight:pie_crust>);
 
 //tag additions
 flour.add(<item:create:wheat_flour>);
@@ -132,6 +145,17 @@ craftingTable.addShapeless("stcocoatopams", stcocoa, [stcup,frothmilk,gcocoa,sug
 craftingTable.addShapeless("pamcocoa", <item:pamhc2foodcore:hotchocolateitem>, [stcocoa,<item:pamhc2foodcore:marshmellowsitem>], null);
 craftingTable.addShapeless("yuccagateau", <item:atmospheric:yucca_gateau>, [<item:atmospheric:roasted_yucca_fruit>,aloegel,dough,<item:atmospheric:yucca_flower>], null);
 craftingTable.addShapeless("fdrawpasta", rawpasta, [egg,flour], null);
+craftingTable.addShapeless("autpancake", <item:autumnity:pancake>, [egg,flour,milk,syrup], null);
+craftingTable.addShaped("doughcake", <item:minecraft:cake>, [[milk, milk, milk], [<tag:items:forge:sugar>, egg, <tag:items:forge:sugar>], [dough, <item:minecraft:air>, dough]], null);
+craftingTable.addShapeless("doughcookie", <item:minecraft:cookie>, [dough,cbeans], null);
+craftingTable.addShapeless("sweetcookie", <item:farmersdelight:sweet_berry_cookie>, [dough, <item:minecraft:sweet_berries>], null);
+craftingTable.addShapeless("honeycookie", <item:farmersdelight:honey_cookie>, [dough,honeybottle], null);
+craftingTable.addShapeless("fdpiecrust", <item:farmersdelight:pie_crust>, [dough, milk, dough], null);
+
+//new create recipes
+<recipetype:create:mechanical_crafting>.addRecipe("cookiecraft", <item:minecraft:cookie>, [[dough, cbeans]]);
+<recipetype:create:mechanical_crafting>.addRecipe("createfdpiecrust", <item:farmersdelight:pie_crust>, [[dough, milk, dough]]);
+<recipetype:create:mixing>.addRecipe("mix_pie_crust", "none", <item:farmersdelight:pie_crust>, [dough, milk, dough]);
 
 //farmer's delight and simply tea
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsyrup",
