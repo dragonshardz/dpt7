@@ -73,9 +73,6 @@ for str in removeFoodArray{
     craftingTable.removeByName(str);
 }
 
-//remove create recipes
-<recipetype:create:mixing>.removeRecipe(<item:farmersdelight:pie_crust>);
-
 //tag additions
 flour.add(<item:create:wheat_flour>);
 jellies.add(mulberryjam);
@@ -151,11 +148,6 @@ craftingTable.addShapeless("doughcookie", <item:minecraft:cookie>, [dough,cbeans
 craftingTable.addShapeless("sweetcookie", <item:farmersdelight:sweet_berry_cookie>, [dough, <item:minecraft:sweet_berries>], null);
 craftingTable.addShapeless("honeycookie", <item:farmersdelight:honey_cookie>, [dough,honeybottle], null);
 craftingTable.addShapeless("fdpiecrust", <item:farmersdelight:pie_crust>, [dough, milk, dough], null);
-
-//new create recipes
-<recipetype:create:mechanical_crafting>.addRecipe("cookiecraft", <item:minecraft:cookie>, [[dough, cbeans]]);
-<recipetype:create:mechanical_crafting>.addRecipe("createfdpiecrust", <item:farmersdelight:pie_crust>, [[dough, milk, dough]]);
-<recipetype:create:mixing>.addRecipe("mix_pie_crust", "none", <item:farmersdelight:pie_crust>, [dough, milk, dough]);
 
 //farmer's delight and simply tea
 <recipetype:farmersdelight:cooking>.addJSONRecipe("fdpotsyrup",
