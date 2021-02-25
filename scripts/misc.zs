@@ -11,21 +11,18 @@ val worldStoneArray = [
 	<item:minecraft:blackstone>,
 	<item:atmospheric:smooth_arid_sandstone>,
 	<item:atmospheric:smooth_red_arid_sandstone>,
-	<item:atmospheric:arid_sand>,
-	<item:atmospheric:red_arid_sand>,
-	<item:biomesoplenty:white_sand>,
 	<item:biomesoplenty:smooth_white_sandstone>,
 	<item:create:gabbro>,
 	<item:create:dolomite>,
 	<item:create:limestone>,
 	<item:create:weathered_limestone>,
 	<item:create:scoria>,
-	<item:create:limesand>,
-	<item:engineersdecor:dense_grit_dirt>
+	<item:create:limesand>
 ] as IItemStack[];
 
 for item in worldStoneArray{
 	worldStone.add(item);
+	<quark:stone_tool_materials>.add(item);
 }
 
 //make basestones craftable into cobble with slight loss
