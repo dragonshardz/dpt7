@@ -25,6 +25,9 @@ for item in worldStoneArray{
 	<quark:stone_tool_materials>.add(item);
 }
 
+//remove recipes
+craftingTable.removeByName("minecraft:torch");
+
 //make basestones craftable into cobble with slight loss
 craftingTable.addShaped("cobbledcobble", <item:minecraft:cobblestone> * 8, [
 	[worldStone, worldStone, worldStone],
