@@ -58,10 +58,10 @@ val removeFoodArray = [
 	"simplytea:cup_cocoa",
 	"atmospheric:yucca_gateau",
 	"farmersdelight:raw_pasta",
-	"autumnity:pancake"
+	"autumnity:pancake",
 	"farmersdelight:cake_from_milk_bottle",
 	"minecraft:cake",
-	"ceramics:cake"
+	"ceramics:cake",
 	"minecraft:cookie",
 	"quark:tweaks/crafting/utility/bent/cookie",
 	"farmersdelight:sweet_berry_cookie",
