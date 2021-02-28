@@ -22,7 +22,7 @@ val worldStoneArray = [
 
 for item in worldStoneArray{
 	worldStone.add(item);
-	<quark:stone_tool_materials>.add(item);
+	<tag:items:quark:stone_tool_materials>.add(item);
 }
 
 //remove recipes
