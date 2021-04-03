@@ -67,7 +67,6 @@ val removeFoodArray = [
 	"farmersdelight:sweet_berry_cookie",
 	"farmersdelight:honey_cookie",
 	"farmersdelight:pie_crust",
-	"farmersdelight:integration/create/mixing/pie_crust_from_mixing",
 	"farmersdelight:apple_pie"
 ] as string[];
 
