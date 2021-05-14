@@ -1,0 +1,18 @@
+{
+  "modId": "atmospheric",
+  "group": {
+    "name": "Atmospheric Misc",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:other"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "atmospheric:barrel_cactus"
+      }
+    }
+  ]
+}

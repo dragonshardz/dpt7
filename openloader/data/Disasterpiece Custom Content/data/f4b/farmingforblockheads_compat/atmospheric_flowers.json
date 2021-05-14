@@ -1,0 +1,53 @@
+{
+  "modId": "atmospheric",
+  "group": {
+    "name": "Atmospheric Flowers",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:flowers"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "atmospheric:water_hyacinth"
+      }
+    },
+    {
+      "output": {
+        "item": "atmospheric:warm_monkey_brush"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:hot_monkey_brush"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:scalding_monkey_brush"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:yucca_flower"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:gilia"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:passion_vine"
+      }
+    },
+	{
+      "output": {
+        "item": "atmospheric:tall_yucca_flower"
+      }
+    }
+  ]
+}

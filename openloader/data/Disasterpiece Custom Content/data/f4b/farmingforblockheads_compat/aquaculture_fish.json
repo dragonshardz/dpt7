@@ -1,0 +1,23 @@
+{
+  "modId": "aquaculture",
+  "group": {
+    "name": "Aquaculture Fish",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:other"
+  },
+  "customEntries": [
+	{
+      "output": {
+        "item": "aquaculture:atlantic_cod_bucket"
+      }
+    },
+		{
+      "output": {
+        "item": "aquaculture:blackfish_bucket"
+      }
+    },
+  ]
+}
