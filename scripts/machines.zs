@@ -22,6 +22,12 @@ var andesite_alloy = <item:create:andesite_alloy>;
 var ca_cap = <item:createaddition:capacitor>;
 var treebark = <item:farmersdelight:tree_bark>;
 var sawdust = <item:immersiveengineering:dust_wood>;
+var steelingot = <tag:items:forge:ingots/steel>;
+var steelplate = <tag:items:forge:plates/steel>;
+var netherite = <tag:items:forge:ingots/netherite>;
+var hellscrap = <item:minecraft:netherite_scrap>;
+var steelnugs = <tag:items:forge:nuggets/steel>;
+var gemerald = <tag:items:forge:gems/emerald>;
 
 //recipe removal
 val removeMachineArray = [
@@ -324,3 +330,34 @@ stoneCutter.addRecipe("scriververtslab", <item:upgrade_aquatic:river_vertical_sl
 <recipetype:immersiveengineering:sawmill>.addRecipe("riverstripped", <item:upgrade_aquatic:stripped_river_log>, 1600, <item:upgrade_aquatic:river_planks> * 6, [sawdust]);
 <recipetype:immersiveengineering:sawmill>.addRecipe("driftwoodwoodstripped", <item:upgrade_aquatic:stripped_driftwood>, 1600, <item:upgrade_aquatic:driftwood_planks> * 6, [sawdust]);
 <recipetype:immersiveengineering:sawmill>.addRecipe("riverwoodstripped", <item:upgrade_aquatic:stripped_river_wood>, 1600, <item:upgrade_aquatic:river_planks> * 6, [sawdust]);
+
+//add recipes for tetra
+//decorative items
+craftingTable.addShaped("tetwall", tetra:forged_wall, [[steelingot, null, steelingot],[steelingot, null, steelingot],[steelingot, null, steelingot]]);
+craftingTable.addShaped("tetpillar", tetra:forged_pillar, [[null, steelingot, steelingot],[null, steelingot, steelingot],[null, steelingot, steelingot]]);
+craftingTable.addShaped("tetplatform", tetra:forged_platform, [[null, steelplate, steelplate],[null, steelingot, steelingot]]);
+craftingTable.addShaped("tetslab", tetra:forged_platform_slab, [[null, steelplate, steelplate]]);
+craftingTable.addShaped("tetvent", tetra:forged_vent, [[null, steelplate, steelingot],[steelingot, steelingot, null]]);
+craftingTable.addShaped("tetcrate", tetra:forged_container, [[steelplate, steelplate, steelplate],[steelplate, netherite, steelplate]],[steelplate, steelplate, steelplate]]]);
+
+//machines
+craftingTable.addShaped("tetworkbench", tetra:forged_workbench, [[netherite,netherite,netherite],[steelplate,minecraft:anvil,steelplate]]);
+craftingTable.addShaped("tetbenchpress", tetra:hammer_base, [[steelplate,steelplate,steelplate],[steelplate,create:mechanical_press,steelplate],[null,netherite,null]]);
+craftingTable.addShaped("tetxfer", tetra:transfer_unit, [[steelplate, steelplate, steelplate],[steelplate, create:depot, steelplate]],[steelplate, minecraft:repeater, steelplate]]]);
+craftingTable.addShaped("tetcorepipe", tetra:extractor_pipe, [[steelplate, create:fluid_pipe, steelplate],[steelplate, create:fluid_pipe, steelplate]],[steelplate, create:fluid_pipe, steelplate]]]);
+craftingTable.addShaped("tetcorepump", tetra:core_extractor, [[steelplate, steelplate, steelplate],[steelplate, netherite, steelplate]],[steelplate, create:hose_pulley, steelplate]]]);
+craftingTable.addShaped("tetcthonic", tetra:cthonic_extractor, [[null,minecraft:end_rod,null],[null,minecraft:ender_eye,null]]);
+
+//items
+craftingTable.addShaped("tetcell", tetra:magmatic_cell, [[steelplate,minecraft:magma_cream,steelplate]]);
+craftingTable.addShaped("tetbolt", tetra:forged_bolt, [[steelplate,null,null]]);
+craftingTable.addShaped("tetshaft", tetra:forged_beam, [[steelplate,steelplate,steelplate]]);
+craftingTable.addShaped("tetmesh", tetra:forged_mesh, [[steelplate,null,steelplate],[null,steelplate,null]]);
+craftingTable.addShaped("tetlatch", tetra:quick_latch, [[null,steelplate,null],[null,steelnugs,null]]);
+craftingTable.addShaped("tetscrap", tetra:metal_scrap, [[steelnugs,steelnugs,null]]);
+craftingTable.addShaped("tetventplate", tetra:forged_vent, [[steelingot, steelplate, steelingot]]);
+craftingTable.addShaped("tetcombustion", tetra:combustion_chamber, [[steelplate, create:fluid_pipe, steelplate],[steelplate, minecraft:furnace, steelplate]],[steelplate, create:fluid_pipe, steelplate]]]);
+craftingTable.addShaped("tetlube", tetra:lubricant_dispenser, [[steelplate, null, steelplate],[create:fluid_pipe, immersiveengineering:biodiesel_bucket, create:fluid_pipe]],[steelplate, null, steelplate]]]);
+craftingTable.addShaped("tetearthpiercer", tetra:earthpiercer, [[steelplate, immersiveengineering:drillhead_steel, steelplate],[gemerald, minecraft:ender_eye, gemerald]],[steelplate, null, steelplate]]]);
+craftingTable.addShaped("tetstonecutter", tetra:stonecutter, [[steelplate, create:mechanical_drill, steelplate],[gemerald, minecraft:ender_eye, gemerald]],[steelplate, null, steelplate]]]);
+craftingTable.addShaped("tetstabilizer", tetra:planar_stabilizer, [[steelplate, null, steelplate],[gemerald, minecraft:ender_eye, gemerald]],[steelplate, null, steelplate]]]);
